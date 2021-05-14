@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+// ## Colors
+// ### Primary
+$Blue: hsl(223, 87%, 63%);
+
+// ### Secondary
+$PaleBlue: hsl(223, 100%, 88%);
+$LightRed: hsl(354, 100%, 66%);
+
+// ### Neutral
+$Gray: hsl(0, 0%, 59%);
+$VeryDarkBlue: hsl(209, 33%, 12%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+  color: $VeryDarkBlue;
+}
+
+.container {
+  margin: 5.31rem auto auto auto;
+  width: 85%;
+  max-width: 39rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  width: 3.125rem;
+  height: auto;
+  margin-bottom: 2.35rem;
+}
+h1 {
+  font-size: 20px;
+  color: gray;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  em {
+    color: $VeryDarkBlue;
+    font-style: normal;
+    font-weight: 700;
+  }
+}
+
+p {
+  font-size: 12px;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  width: 90%;
+  margin-bottom: 4.125rem;
+}
+
+input {
+  width: 100%;
+  border-radius: 20px;
+  height: 2.18rem;
+  margin: 0.3rem;
+  cursor: pointer;
+}
+
+::placeholder {
+  padding-left: 1.875rem;
+  color: $PaleBlue;
+}
+
+.mail {
+  border: 1px solid $PaleBlue;
+}
+
+.button {
+  background: $Blue;
+  color: white;
+  border: none;
+  box-shadow: 2px 3px 5px 0px $PaleBlue;
+}
+
+.graphique {
+  width: 100%;
+  margin-bottom: 7.8rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social__media {
+  display: flex;
+  margin-bottom: 1.5rem;
+  a {
+    cursor: pointer;
+    display: block;
+    border: 1px solid $PaleBlue;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: relative;
+    margin: 0.5rem;
+    color: $Blue;
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      color: $PaleBlue;
+      background-color: $Blue;
+    }
+  }
+}
+
+@media screen and(min-width:450px) {
+  .brand {
+    width: 4.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  P {
+    font-size: 0.8rem;
+  }
+  form {
+    display: flex;
+    .button {
+      width: 12.5rem;
+    }
+  }
+}
