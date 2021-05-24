@@ -65,23 +65,35 @@ form {
 
 input {
   width: 100%;
-  border-radius: 20px;
-  height: 2.18rem;
+  border-radius: 30px;
+  height: 3rem;
   margin: 0.3rem;
-  cursor: pointer;
+}
+
+.error {
+  margin-left: 1.5rem;
 }
 
 ::placeholder {
-  padding-left: 1.875rem;
   color: $PaleBlue;
+  padding-left: 1.5rem;
 }
 
-.mail {
+.email {
   border: 1px solid $PaleBlue;
+  padding-left: 1.3rem;
+}
+
+.invalid {
+  color: $LightRed;
+  .email {
+    border: 1px solid $LightRed;
+  }
 }
 
 .button {
   background: $Blue;
+  cursor: pointer;
   color: white;
   border: none;
   box-shadow: 2px 3px 5px 0px $PaleBlue;
@@ -139,5 +151,9 @@ footer {
     .button {
       width: 12.5rem;
     }
+  }
+  .mailBox {
+    width: 80%;
+    margin-right: 1.5rem;
   }
 }
